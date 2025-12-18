@@ -2,6 +2,19 @@
 
 A deterministic, archival-grade pipeline for gravitational-wave residual analysis.
 
+This repository provides a deterministic, archival-grade pipeline for reproducing the residual analysis described in version v.1.2.7. All execution paths are mechanically guarded to prevent silent divergence.
+
+Environment setup.
+Reproduction must be performed using the exact dependency versions specified in requirements-strict.lock. Create a clean Python 3.11 environment and install dependencies using pip install -r requirements-strict.lock The pipeline enforeces strict runtime checks and will refuse execution if any dependency version, file origin, or preregistred parameter differs from the archival specification.
+
+Execution
+Run the analysis entry point directly:
+python ligo-residual_analysis_v1.2.7.py
+No command-line arguments are required. All analysis parameters are cryptographically preregistered and verified at runtime.
+
+Verification.
+Successful execution produces a stable artifact (run_record_LATEST.json) that is guaranteed to be bit-for-bit identical across repeated runs in the same environment. Any deviation in environment, configuration, or algorithmic path results in a hard failure rather than silent variation.
+
 This repository implements a **Platinum-Iridium reproducibility contract**: if two independent users run this code with the same inputs and pinned environment, they will produce a **bit-for-bit identical forensic artifact**. Any deviation is treated as a reproducibility failure, not a numerical curiosity.
 
 ---
