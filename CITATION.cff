@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+title: "Platinum-Iridium: Deterministic Gravitational-Wave Residual Analysis Pipeline"
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - family-names: Thomas
+    given-names: Kyler
+version: 1.2.7
+date-released: 2025-12-18
+repository-code: https://github.com/platinum-iridium/ligo-residual-analysis
+license: MIT
+keywords:
+  - gravitational waves
+  - reproducibility
+  - deterministic computation
+  - LIGO
+  - archival science
