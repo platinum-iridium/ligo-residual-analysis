@@ -1,0 +1,17 @@
+#
+# requirements-strict.lock
+#
+# Generated for Platinum-Iridium archival reproducibility
+# Release: v1.2.7
+# Date: 2025-12-18
+#
+# Python: 3.11*
+#
+# Note:
+# This lockfile pins direct dependencies only.
+# Transitive dependencies are enforced indirectly via strict runtime checks.
+#
+
+gwpy==3.0.8
+numpy==1.26.4
+scipy==1.13.1
